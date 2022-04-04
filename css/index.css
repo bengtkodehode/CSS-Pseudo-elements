@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+* {
+    margin: 10px auto;
+    padding: 0;
+}
+body {
+    font-family: 'Staatliches', cursive;
+    background: white;
+    background-image: url("../img/bkg.jpg");
+    background-position: center;
+    background-size: center;
+    background-repeat: no-repeat;
+}
+h1 {
+    color: black;
+    font-size: 3rem;
+    width: 400px;
+    margin-top: 20px;
+    text-align: center;
+    position: relative;
+}
+h1::after {
+    font-family:"Font Awesome 5 Free";
+    content: "\f121";
+    display: block;
+    background: red;
+    color: black;
+    line-height: 4px;
+    width: 200px;
+    position: absolute;
+    left: 100px;
+    top: 75px;
+}
+.mainDiv {
+    width: 100%;
+    height: 25vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: transparent;
+}
+.color {
+    color: red;
+    background: yellow;
+}
+::selection {
+    color: red;
+    background: yellow;
+}
+.expText {
+    color: black;
+    text-align: center;
+    margin-top: 40px;
+    font-size: 2rem;
+}
+.box {
+    border: 4px #2DC282 solid;
+    width: fit-content;
+    margin-top: 40px;
+    width: 600px;
+    background: white;
+}
+button {
+    padding: 5px;
+    border: none;
+    margin-top: 10px;
+    margin: 30px;
+    align-items: center;
+    color: black;
+    background: transparent;
+}
+button .comment {
+    display: none;
+  }
+  
+  button:hover .replies {
+    display: none;
+  }
+  
+  button:hover .comment {
+    display: inline;
+    background: #3297FD;
+    color: white;
+    font-size: 100%;
+  }
+
+/*_____________________________________________________  */
+
+.apple {
+    text-align: center;
+    padding: 20px 0;
+    padding-bottom: 0;
+}
+blockquote {
+    font-size: 1.8rem;
+    width: 520px;
+    line-height: 25px;
+    color: black;
+    margin-left: 50px;
+}
+
+blockquote::before {
+    content: open-quote;
+    font-size: 2.5rem;
+    color: gray;
+}
+
+blockquote::after {
+    content:close-quote;
+    font-size: 2.5rem;
+    color: gray;
+}
+figcaption {
+    margin-left: 350px;
+    padding-bottom: 50px;
+}
+
+
+/* _____________________________________________________ */
+
+/* I mainly used this exampel to illustrate how versatile the pseudo elements can be. 
+It started off with experimenting with the property ::after and then styling it with border-radius, color and backgroundcolor. I was wondering if there where a limit to styling the backgroundcolors of ::after, it turned out there where few limits. */
+
+/* Credit to: TianDev for making the logo */
+/* https://www.youtube.com/watch?v=oXrQvYoUXis&ab_channel=TianDev */
+
+/* _____________________________________________________ */
+
+#main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 50px;
+}
+.logo {
+    width: 150px;
+    height: 120px;
+    background: red;
+    margin: 10px 20px 0 0;
+    border-radius: 60% / 9%;
+    position: relative;
+}
+.logo::before {
+    content:"";
+    position: absolute;
+    top: 7%;
+    bottom: 7%;
+    left: -9.5%;
+    right: -9.5%;
+    background: red;
+    border-radius: 9% / 50%;
+}
+.logo::after {
+    content:"";
+    position: absolute;
+    border-top: 25px solid transparent;
+    border-bottom: 25px solid transparent;
+    border-left: 34px solid #fff;
+    left: 58px;
+    top: 35px;
+}
+.text {
+    font-size:120px;
+    font-family: "Oswald", sans-serif;
+    font-weight: bold;
+    letter-spacing: -2px;
+    color: #212121;
+    margin-right: 50px;
+}
+.logoText{
+    text-align: center;
+    padding-bottom: 30px;
+}
+

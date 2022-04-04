@@ -1,2 +1,2 @@
-# Css Pseudo elements
- Css Pseudo elements
+# CSS Pseudo elements
+ CSS Pseudo elements
